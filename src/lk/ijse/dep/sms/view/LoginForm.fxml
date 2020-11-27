@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.sms.controller.LoginFormController">
+   <children>
+      <JFXTextArea layoutX="14.0" layoutY="14.0" prefHeight="111.0" prefWidth="572.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="123.0" layoutY="70.0" prefHeight="28.0" prefWidth="354.0" text="FX Students Management System - JDBC SMS" textFill="#1b0c90">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="185.0" layoutY="372.0" prefHeight="21.0" prefWidth="200.0" style="-fx-background-color: white;" text="Copyright 2019 IJSE - DEP 4 Version" textFill="#1d078a">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="160.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_student_female_60px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="397.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_student_male_60px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="186.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_password_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="47.0" layoutX="186.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_user_male_128px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" layoutX="221.0" layoutY="228.0" prefHeight="29.0" prefWidth="164.0" promptText="Enter UserName Here :" style="-fx-background-color: white;" />
+      <JFXButton fx:id="btnLogin" layoutX="185.0" layoutY="328.0" onAction="#btnLogin_OnAction" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: darkblue;" text="Login" textFill="#f2eaea">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword" layoutX="221.0" layoutY="281.0" prefHeight="29.0" prefWidth="164.0" promptText="Enter Password Here :" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="cmbUserType" layoutX="221.0" layoutY="169.0" prefHeight="31.0" prefWidth="164.0" promptText="Select UserType :" style="-fx-background-color: white;" />
+      <ImageView fitHeight="29.0" fitWidth="40.0" layoutX="186.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_name_128px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="137.0" prefHeight="21.0" prefWidth="538.0" style="-fx-background-color: darkblue;" />
+   </children>
+</AnchorPane>

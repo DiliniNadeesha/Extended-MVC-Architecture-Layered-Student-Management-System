@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PaymentDetails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1c51837c-1c25-492c-8427-94df349ddc67">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="StudentManagement"/>
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[c21zLnBheW1lbnQgQVMgLDE4MCw0OCxkZjQ4YjJmNS1iMDZjLTRjNzYtYTI3NC1jMTFmM2RmZTY3
+NTA7]]>
+	</property>
+	<queryString>
+		<![CDATA[SELECT sms.payment.`batchNo`,
+	sms.payment.`studentId`,
+	sms.payment.pno,
+	sms.payment.`totalFee`
+FROM sms.payment]]>
+	</queryString>
+	<field name="batchNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="batchNo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="studentId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="studentId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="pno" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="pno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="totalFee" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="totalFee"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="-6" y="0" width="560" height="76" forecolor="#2F36A1" uuid="a2d4812e-05c3-4519-9ac6-cd87bac9ec5d"/>
+				<box>
+					<bottomPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Details Document]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="cb8f2d48-e551-4703-8174-d791349d12fc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f1859de-4528-4b00-8bb7-10db6c5cf7ab"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[batchNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="63b90ce0-5134-4aa4-910d-d2f30a8fde0b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec52eea2-70a3-4d76-ba8d-9cad895d6a82"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[studentId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="e4095b55-f430-4a72-ba97-8a63355cdcaa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="db13c618-f7e9-4775-992a-f3dbd4a4a7da"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="50f0b4fa-65a0-4774-a6eb-806abb73ccf7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6925695-b1c0-4160-901c-57418973f3e8"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[totalFee]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="fb4ffb71-bcd0-435c-9c33-94dccea076b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f1859de-4528-4b00-8bb7-10db6c5cf7ab"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{batchNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="92a4f7ea-c162-4749-b049-8a1a1344e351">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec52eea2-70a3-4d76-ba8d-9cad895d6a82"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{studentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="93a6aa86-343f-470c-8553-d4a40634a279">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="db13c618-f7e9-4775-992a-f3dbd4a4a7da"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="14c0f380-0fd0-4103-a23f-2292dd3417b3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6925695-b1c0-4160-901c-57418973f3e8"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalFee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

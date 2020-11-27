@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="483.0" prefWidth="808.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.sms.controller.MainFormController">
+   <children>
+      <JFXTextArea layoutX="30.0" layoutY="14.0" prefHeight="111.0" prefWidth="747.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="258.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_student_female_60px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="494.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_student_male_60px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="223.0" layoutY="70.0" prefHeight="28.0" prefWidth="354.0" text="FX Students Management System - JDBC SMS" textFill="#1b0c90">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCourse" fitHeight="80.0" fitWidth="80.0" layoutX="143.0" layoutY="195.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_courses_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBatch" fitHeight="80.0" fitWidth="80.0" layoutX="246.0" layoutY="188.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_students_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPayment" fitHeight="80.0" fitWidth="80.0" layoutX="360.0" layoutY="188.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_card_in_use_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgSubject" fitHeight="80.0" fitWidth="80.0" layoutX="474.0" layoutY="188.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_working_with_a_laptop_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLecturer" fitHeight="80.0" fitWidth="80.0" layoutX="585.0" layoutY="188.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_training_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgExam" fitHeight="80.0" fitWidth="80.0" layoutX="697.0" layoutY="188.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_exam_128px.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="14.0" layoutY="401.0" prefHeight="30.0" prefWidth="780.0" style="-fx-background-color: white;" text="Welcome" textAlignment="CENTER" textFill="#d7150b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="3.0" layoutY="431.0" prefHeight="17.0" prefWidth="780.0" text="Please select one of above main operations to proceed" textFill="#130c97">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="448.0" prefHeight="21.0" prefWidth="802.0" style="-fx-background-color: white;" text="Copyright 2019 IJSE - DEP 4 Version" textFill="#1d078a">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgStudent" fitHeight="80.0" fitWidth="80.0" layoutX="30.0" layoutY="188.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_add_user_group_woman_man_128px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="148.0" prefHeight="21.0" prefWidth="780.0" style="-fx-background-color: darkblue;" />
+      <Label layoutX="13.0" layoutY="296.0" prefHeight="21.0" prefWidth="780.0" style="-fx-background-color: darkblue;" />
+      <ProgressIndicator fx:id="pgb" layoutX="384.0" layoutY="340.0" prefHeight="51.0" prefWidth="32.0" />
+      <JFXButton fx:id="btnRestore" layoutX="233.0" layoutY="346.0" onAction="#btnRestore_OnAction" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: lightgreen;" text="Restore" />
+      <JFXButton fx:id="btnBackup" layoutX="461.0" layoutY="346.0" onAction="#btnBackup_OnAction" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: lightpink;" text="Backup" />
+   </children>
+</AnchorPane>

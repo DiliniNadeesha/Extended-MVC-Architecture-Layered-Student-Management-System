@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.sms.controller.ManageLecturerFormController">
+   <children>
+      <JFXTextArea layoutX="13.0" layoutY="14.0" prefHeight="111.0" prefWidth="784.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="305.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="270.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_student_female_60px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="499.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_student_male_60px.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="65.0" prefHeight="40.0" prefWidth="768.0" style="-fx-background-color: darkblue;" text="Manage Lecturers" textFill="#eeedf2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="658.0" layoutY="70.0" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: white;" text="2019 - 10 - 05" textFill="#1508a8" />
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="755.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_calendar_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="21.0" layoutY="14.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_home_page_128px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtLecId" layoutX="21.0" layoutY="151.0" prefHeight="29.0" prefWidth="165.0" promptText="Lecturer ID :" />
+      <JFXButton fx:id="btnNewLecturer" layoutX="214.0" layoutY="146.0" onAction="#btnNewLecturer_OnAction" prefHeight="40.0" prefWidth="152.0" style="-fx-background-color: darkblue;" text="+ New Lecturer" textFill="#f8eeee" />
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="215.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_training_128px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtName" layoutX="444.0" layoutY="152.0" prefHeight="29.0" prefWidth="345.0" promptText="Lecturer Name :" />
+      <JFXTextField fx:id="txtContactNo" layoutX="21.0" layoutY="214.0" prefHeight="29.0" prefWidth="345.0" promptText="Contact No :" />
+      <JFXTextField fx:id="txtEmail" layoutX="444.0" layoutY="214.0" prefHeight="29.0" prefWidth="345.0" promptText="Email :" />
+      <JFXTextField fx:id="txtSearch" layoutX="23.0" layoutY="272.0" prefHeight="29.0" prefWidth="234.0" promptText="Enter something to search here :" style="-fx-background-color: lightblue;" unFocusColor="#ebe3e3" />
+      <JFXButton fx:id="btnUpdate" layoutX="449.0" layoutY="267.0" onAction="#btnUpdate_OnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: orange;" text="Update" textFill="#2f0404" />
+      <JFXButton fx:id="btnDelete" layoutX="569.0" layoutY="267.0" onAction="#btnDelete_OnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: red;" text="Delete" textFill="#f8eeee" />
+      <JFXButton fx:id="btnReport" layoutX="688.0" layoutY="267.0" onAction="#btnReport_OnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: blue;" text="Report" textFill="#ebe7e7" />
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="451.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_approve_and_update_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="571.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_delete_128px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="690.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_report_card_128px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblLecturer" layoutX="56.0" layoutY="329.0" prefHeight="251.0" prefWidth="698.0">
+        <columns>
+          <TableColumn prefWidth="113.0" text="Lecturer ID" />
+          <TableColumn prefWidth="177.0" text="Lecturer Name" />
+            <TableColumn prefWidth="167.0" text="Contact No" />
+            <TableColumn prefWidth="239.0" text="Email" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" layoutX="330.0" layoutY="267.0" onAction="#btnSave_OnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: green;" text="Save" textFill="#f8eeee" />
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="334.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/icons8_save_128px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
